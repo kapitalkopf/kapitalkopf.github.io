@@ -6,7 +6,7 @@ const RESOURCES = {
   "assets/AssetManifest.json": "35ba753deaa6492d573c22089960a217",
 "assets/FontManifest.json": "5a32d4310a6f5d9a6b651e75ba0d7372",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
-"assets/NOTICES": "590096cbe537d689d1a59b8728e24cfb",
+"assets/NOTICES": "c912c57e88ac9c2e72952a4b7ba8aa93",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "d1722d5cf2c7855862f68edb85e31f88",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "613e4cc1af0eb5148b8ce409ad35446d",
@@ -52,9 +52,9 @@ const RESOURCES = {
 "images/vivid.gif": "90ca14161ead8e5da300060aa5f75499",
 "images/vivid.png": "47c2fd8b5257ec0da5764c622dc2dac9",
 "images/zinseszins.png": "1a1e4d54998a045d276b0305362af956",
-"index.html": "36b827f2cb96fd5f9ed6be645902eeb6",
-"/": "36b827f2cb96fd5f9ed6be645902eeb6",
-"main.dart.js": "9b51fbd5efe9cc4e81e10a106912ef9d",
+"index.html": "880b7493e93c9c55e6d6f24983973f2b",
+"/": "880b7493e93c9c55e6d6f24983973f2b",
+"main.dart.js": "689c5c168b982ff6051fbc05bcef252c",
 "manifest.json": "d42b886ef009c3c63eedf63051715954",
 "version.json": "9089729682c4f421e6a2bb7791d8cda8"
 };
