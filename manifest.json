@@ -1,11 +1,11 @@
 {
-    "name": "geldfluss",
-    "short_name": "geldfluss",
+    "name": "Kapitalkopf",
+    "short_name": "Kapitalkopf",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Aktien, Aktienkurse, Charts - Bei Kapitalkopf.de findest du alles über Finanzen.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
