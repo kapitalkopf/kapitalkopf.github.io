@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "35ba753deaa6492d573c22089960a217",
+  "assets/AssetManifest.json": "ccede7800161ffffdb8e618f68bf9416",
 "assets/FontManifest.json": "5a32d4310a6f5d9a6b651e75ba0d7372",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
 "assets/NOTICES": "1860532e910ae20764f07eb9a5af17ec",
@@ -24,8 +24,7 @@ const RESOURCES = {
 "assets/web/images/investments.png": "88f9f8c2044989261d7310b398697d01",
 "assets/web/images/scalable%2520capital.gif": "bba6274237a37a17845a4f02ccc15617",
 "assets/web/images/scalable%2520capital.png": "d7d65b0f66f95d4dd95b07af9f7dc930",
-"assets/web/images/vivid.gif": "90ca14161ead8e5da300060aa5f75499",
-"assets/web/images/vivid.png": "47c2fd8b5257ec0da5764c622dc2dac9",
+"assets/web/images/vivid.png": "4d665df2fd8f9e1133837bd5606a6227",
 "assets/web/images/zinseszins.png": "1a1e4d54998a045d276b0305362af956",
 "canvaskit/canvaskit.js": "2bc454a691c631b07a9307ac4ca47797",
 "canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62",
@@ -50,12 +49,11 @@ const RESOURCES = {
 "images/investments.png": "88f9f8c2044989261d7310b398697d01",
 "images/scalable%20capital.gif": "bba6274237a37a17845a4f02ccc15617",
 "images/scalable%20capital.png": "d7d65b0f66f95d4dd95b07af9f7dc930",
-"images/vivid.gif": "90ca14161ead8e5da300060aa5f75499",
-"images/vivid.png": "47c2fd8b5257ec0da5764c622dc2dac9",
+"images/vivid.png": "4d665df2fd8f9e1133837bd5606a6227",
 "images/zinseszins.png": "1a1e4d54998a045d276b0305362af956",
-"index.html": "3bf93df7840812e85a1259cfa3aa281c",
-"/": "3bf93df7840812e85a1259cfa3aa281c",
-"main.dart.js": "c3be74d9853ce54cfd74caf9a0b09de6",
+"index.html": "52a4a29d0b118957a47c66c5cba0bab5",
+"/": "52a4a29d0b118957a47c66c5cba0bab5",
+"main.dart.js": "a1822e134ae02f0ea1b2c466facfc119",
 "manifest.json": "e3826044a7a94925459a9091dd9a1627",
 "version.json": "9089729682c4f421e6a2bb7791d8cda8"
 };

@@ -64249,7 +64249,7 @@ $S:138}
 A.TT.prototype={
 $0(){var s=0,r=A.aa(t.P)
 var $async$$0=A.ab(function(a,b){if(a===1)return A.a7(b,r)
-while(true)switch(s){case 0:$.c_().bI("open",["https://vivid.money/r/guerkanX19"])
+while(true)switch(s){case 0:$.c_().bI("open",["https://coinbase.com/join/ztrk_ys"])
 return A.a8(null,r)}})
 return A.a9($async$$0,r)},
 $S:39}
