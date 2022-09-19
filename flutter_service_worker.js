@@ -53,9 +53,9 @@ const RESOURCES = {
 "images/vivid.gif": "90ca14161ead8e5da300060aa5f75499",
 "images/vivid.png": "47c2fd8b5257ec0da5764c622dc2dac9",
 "images/zinseszins.png": "1a1e4d54998a045d276b0305362af956",
-"index.html": "0590f388387bcf30a0c7d2e5d448c09c",
-"/": "0590f388387bcf30a0c7d2e5d448c09c",
-"main.dart.js": "223a162a66d7e70e6a5eb2a0e2736878",
+"index.html": "4269f2a5083f79e9951744a54506126a",
+"/": "4269f2a5083f79e9951744a54506126a",
+"main.dart.js": "cd2ceb1fdeb9ec7d9dcd624acbd6d655",
 "manifest.json": "d42b886ef009c3c63eedf63051715954",
 "version.json": "9089729682c4f421e6a2bb7791d8cda8"
 };
