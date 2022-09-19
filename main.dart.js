@@ -64267,7 +64267,7 @@ A.aak.prototype={
 $0(){$.c_().bI("open",["https://twitter.com/kapitalkopf"])},
 $S:3}
 A.aal.prototype={
-$0(){$.c_().bI("open",["https://www.instagram.com/kapitalkopf"])},
+$0(){$.c_().bI("open",["https://www.instagram.com/kapitalkopf/"])},
 $S:3}
 A.GJ.prototype={
 J(a){var s,r,q=null,p=A.hE(B.f),o=t.t
