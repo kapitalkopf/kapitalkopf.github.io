@@ -6,11 +6,12 @@ const RESOURCES = {
   "assets/AssetManifest.json": "35ba753deaa6492d573c22089960a217",
 "assets/FontManifest.json": "5a32d4310a6f5d9a6b651e75ba0d7372",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
-"assets/NOTICES": "c912c57e88ac9c2e72952a4b7ba8aa93",
+"assets/NOTICES": "a862fcb7bc61321df400c9f3b9c53c11",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "d1722d5cf2c7855862f68edb85e31f88",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "613e4cc1af0eb5148b8ce409ad35446d",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "dd3c4233029270506ecc994d67785a37",
+"assets/shaders/ink_sparkle.frag": "e430f2f229b1a9126b9b96896408ca3d",
 "assets/web/images/aktien%2520analysieren.png": "46e67aac0230abaf56a5b0bfaca7e512",
 "assets/web/images/analyse%2520tool.gif": "3fe3a5e921a252224bb04776e9ea4af9",
 "assets/web/images/analyse%2520tool.png": "cd943462793fd7550c1432a981602fc7",
@@ -26,13 +27,13 @@ const RESOURCES = {
 "assets/web/images/vivid.gif": "90ca14161ead8e5da300060aa5f75499",
 "assets/web/images/vivid.png": "47c2fd8b5257ec0da5764c622dc2dac9",
 "assets/web/images/zinseszins.png": "1a1e4d54998a045d276b0305362af956",
-"canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
-"canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba",
-"canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
-"canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
+"canvaskit/canvaskit.js": "2bc454a691c631b07a9307ac4ca47797",
+"canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62",
+"canvaskit/profiling/canvaskit.js": "38164e5a72bdad0faa4ce740c9b8e564",
+"canvaskit/profiling/canvaskit.wasm": "95a45378b69e77af5ed2bc72b2209b94",
 "custom.js": "d43dfea1655891d7a0279841436e0adf",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"flutter.js": "0816e65a103ba8ba51b174eeeeb2cb67",
+"flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
@@ -52,9 +53,9 @@ const RESOURCES = {
 "images/vivid.gif": "90ca14161ead8e5da300060aa5f75499",
 "images/vivid.png": "47c2fd8b5257ec0da5764c622dc2dac9",
 "images/zinseszins.png": "1a1e4d54998a045d276b0305362af956",
-"index.html": "880b7493e93c9c55e6d6f24983973f2b",
-"/": "880b7493e93c9c55e6d6f24983973f2b",
-"main.dart.js": "689c5c168b982ff6051fbc05bcef252c",
+"index.html": "406a310f920701b8d27029dd873aeca9",
+"/": "406a310f920701b8d27029dd873aeca9",
+"main.dart.js": "223a162a66d7e70e6a5eb2a0e2736878",
 "manifest.json": "d42b886ef009c3c63eedf63051715954",
 "version.json": "9089729682c4f421e6a2bb7791d8cda8"
 };
@@ -64,7 +65,6 @@ const RESOURCES = {
 const CORE = [
   "main.dart.js",
 "index.html",
-"assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
@@ -163,9 +163,11 @@ self.addEventListener("fetch", (event) => {
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache.
+        // lazily populate the cache only if the resource was successfully fetched.
         return response || fetch(event.request).then((response) => {
-          cache.put(event.request, response.clone());
+          if (response && Boolean(response.ok)) {
+            cache.put(event.request, response.clone());
+          }
           return response;
         });
       })
