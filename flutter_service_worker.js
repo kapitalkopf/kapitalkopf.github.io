@@ -53,8 +53,8 @@ const RESOURCES = {
 "images/vivid.gif": "90ca14161ead8e5da300060aa5f75499",
 "images/vivid.png": "47c2fd8b5257ec0da5764c622dc2dac9",
 "images/zinseszins.png": "1a1e4d54998a045d276b0305362af956",
-"index.html": "406a310f920701b8d27029dd873aeca9",
-"/": "406a310f920701b8d27029dd873aeca9",
+"index.html": "c3e99ff8c52961084974f0f81526e407",
+"/": "c3e99ff8c52961084974f0f81526e407",
 "main.dart.js": "223a162a66d7e70e6a5eb2a0e2736878",
 "manifest.json": "d42b886ef009c3c63eedf63051715954",
 "version.json": "9089729682c4f421e6a2bb7791d8cda8"
